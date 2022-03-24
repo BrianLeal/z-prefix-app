@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 
 //Page Imports
 import Login from '../pages/Login.js';
+import Blogs from '../pages/Blogs.js';
+import BlogPost from '../pages/BlogPost.js';
+import MyBlogPosts from '../pages/MyBlogPosts';
+
 //Styling
 import { styled } from '@mui/material/styles';
 import { 
@@ -13,10 +17,11 @@ import {
     Button
 } from '@mui/material';
 
+//CSS Style
 import '../styling/blogs.css'
 
 
-export default function NavBar() {
+export default function LoggedInNavBar() {
     return (
         <header className='app-header'>
             <Grid container spacing={0}>
@@ -24,7 +29,6 @@ export default function NavBar() {
                     <a href='/' style={{color: '#BCC3D0', textDecoration: "none"}}>
                         <h1>Blog Site</h1>    
                     </a>
-
                 </Grid>
             <Grid item xs={12}>
                     <form>
@@ -36,8 +40,15 @@ export default function NavBar() {
                         noValidate
                         autoComplete="off"
                         >
-                            <Link to="/login" element={<Login />}>
-                                <Button sx={{color: '#BCC3D0', fontWeight: 'bold'}} variant="contained" href="/login">Login</Button>
+                            
+                            <Link to="/" element={<Blogs />}>
+                                <Button sx={{color: '#BCC3D0', fontWeight: 'bold'}} variant="contained" href="/">View All Blog Posts</Button>
+                            </Link>
+                            <Link to="/blogpost" element={<BlogPost />}>
+                                <Button sx={{color: '#BCC3D0', fontWeight: 'bold'}} variant="contained" href="/blogpost">Create A New Post</Button>
+                            </Link>
+                            <Link to="/myblogposts" element={<MyBlogPosts />}>
+                                <Button sx={{color: '#BCC3D0', fontWeight: 'bold'}} variant="contained" href="/myblogposts">View My Blog Posts</Button>
                             </Link>
                         </Box>
                     </form>
@@ -46,3 +57,5 @@ export default function NavBar() {
         </header>
     );
 }
+
+

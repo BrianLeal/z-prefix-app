@@ -1,0 +1,18 @@
+.postcard {
+    justify-content: center
+}
+
+.footer {
+    text-align: center;
+    top: 0px;
+    /* position: absolute; */
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: left;
+    /* font-size: calc(10px + 2vmin); */
+    color: #BCC3D0;
+    background-color: #282c34;
+    letter-spacing: .95em;
+    padding: 5px;
+    position: anchor bottom;
+}

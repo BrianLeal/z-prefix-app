@@ -1,0 +1,17 @@
+.app-header {
+    text-align: left;
+    top: 0px;
+    /* position: absolute; */
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: left;
+    /* font-size: calc(10px + 2vmin); */
+    color: #A4A8B1;
+    background-color: #282c34;
+    letter-spacing: .95em;
+   
+
+    
+      }
+      /* #7BA5F3 */
+      /* #282c34 */
