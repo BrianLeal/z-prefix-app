@@ -10,7 +10,7 @@ import {
 
 // import './components.css'
 
-export default function BlogCards ({title, content}) {
+export default function BlogCards ({title, content, created_at}) {
 
     return (
         <Card className="postcard" sx={{ 
@@ -26,6 +26,11 @@ export default function BlogCards ({title, content}) {
                     </Typography>
                     <Typography sx={{fontFamily: "monospace"}} variant="body2" color="text.secondary" >
                         {content}
+                    </Typography>
+                    <br></br>
+                    <br></br>
+                    <Typography sx={{fontFamily: "monospace"}} variant="body2" color="text.secondary" >
+                        Created on: {created_at}
                     </Typography>
                 </CardContent>
             </CardActionArea>

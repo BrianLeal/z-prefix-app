@@ -52,7 +52,7 @@ export default function MyBlogPosts () {
                         return (
                         <>
                         <Grid item xs={4}> 
-                            <BlogCards title={i.title} content={i.content} />
+                            <BlogCards title={i.title} content={i.content} created_at={i.created_at}/>
                         </Grid>
                         </>      
                         )

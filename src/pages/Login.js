@@ -42,7 +42,7 @@ export default function Login () {
          })
          .then((res) => res.json())
          .then(data => setCurrentUser(data))
-         .then(navigate("/"))
+         .then(navigate("/myblogposts"))
          .catch((err) => console.log(err))
      };
 

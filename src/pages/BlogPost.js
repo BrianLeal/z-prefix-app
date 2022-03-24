@@ -56,12 +56,6 @@ export default function BlogPost () {
                         <input type="text" 
                         onChange ={(e) => setContent(e.target.value)}/>
                     </p>
-                    {/* <p>
-                        GET from /posts
-                        <label>Created On:</label>
-                        <input htmlFor="created" type="text" 
-                        onChange ={(e) => setUsername((e.target.value))}/>
-                    </p> */}
                 <button type="submit" className = "submitBtn">Submit Post</button>
              </form>
         </div>
